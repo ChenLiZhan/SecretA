@@ -2,10 +2,38 @@
 <html>
   <head>
     <title><%= title %></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<body>
+
+<div id="container">
+    <%- include partials/nav.html %>
+    
+    <div id="main-container" style="padding-top: 70px">
+        <div class="inner-page-wrapper" id="sky-body">
+            <div class="container">
+                <div id="timeline-wrapper">
+                    <div id="timeline" style="height: 11068px;" class="finished"></div>
+
+                    <div id="timeline-content">
+                        <section class="right-start" data-decade="2013" style="position: relative; height:1078px;">
+                            
+                        </section>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+    <script src="/javascripts/scripts.js"></script>
+</body>
 </html>
