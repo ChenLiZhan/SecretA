@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    background-image: url('../images/background.jpg');
+    height: 5000px;
 }
 
 h1 {
@@ -9,12 +11,11 @@ h1 {
 #container {
     width: 100%;
     height: 100%;
-    background-image: url('../images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #main-container {
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 1
@@ -23,6 +24,7 @@ h1 {
 }
 
 .inner-page-wrap {
+    height: 100%;
     position: relative;
 }
 
@@ -164,6 +166,11 @@ h1 {
     line-height: 1.2em;
 }
 
+#timeline-wrapper .item.red > p {
+    background-color: #ec446b;
+}
+
+
 #timeline-content .item .connector {
     width: 20px;
     height: 1px;
@@ -217,6 +224,12 @@ h1 {
     transition: opacity 300ms;
 }
 
+#timeline-content .item.left-col .info {
+    left: auto;
+    right: 1px;
+    padding: 15px 70px 15px 15px;
+}
+
 #timeline-content .item.active .info {
     z-index: 9;
     opacity: 1;
@@ -236,10 +249,18 @@ h1 {
     z-index: 9;
 }
 
+#timeline-content .item.left-col .expand {
+    left: auto;
+    right: 15px;
+}
+
 #timeline-content .item.active .expand {
     z-index: 9;
 }
 
+.right-start, .left-start {
+    margin-bottom: 60px;
+}
 
 @-webkit-keyframes pulse {
     0% { background-color: #00CCFF;}
