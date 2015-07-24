@@ -6,6 +6,8 @@ body {
 
 h1, h2 {
     color: #ffffff;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 footer {
