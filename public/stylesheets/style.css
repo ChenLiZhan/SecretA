@@ -8,6 +8,18 @@ h1, h2 {
     color: #ffffff;
 }
 
+footer {
+    width: 100%;
+    height : 200px;
+    position: relative;
+    bottom: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 100px;
+}
+
 #container {
     width: 100%;
     height: 100%;
